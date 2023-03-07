@@ -11,7 +11,7 @@ TEST(CalculatorTest, add){   //Arrange section
     int result = 0;
 
     //Act section
-   Calculator myCalculator;
+    Calculator myCalculator;
     result = myCalculator.add(value1, value2);
 
     //Assert section
@@ -31,7 +31,7 @@ TEST(CalculatorTest, addThreeValues){   //Arrange section
     result = myCalculator.add(value1, value2, value3);
 
     //Assert section
-    EXPECT_NE(30,result);
+    EXPECT_EQ(30,result);
 }
 
 TEST(CalculatorTest, substractLowerNumber){
